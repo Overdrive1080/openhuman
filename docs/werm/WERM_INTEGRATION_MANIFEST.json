@@ -1,26 +1,27 @@
 ﻿{
-  "schema": "werm-openhuman-reference-v1",
-  "status": "deferred",
-  "authority": "nvidia-werm",
-  "upstream": "https://github.com/tinyhumansai/openhuman",
-  "source_commit": "fed1742",
-  "license_observed": "GPL-3.0",
-  "production_enabled": false,
-  "integration_branch": "werm-integration",
-  "candidates": [
-    "persistent-local-memory-patterns",
-    "context-compression",
-    "mcp-integration-patterns",
-    "checkpointed-agent-workflows",
-    "research-recovery-patterns"
-  ],
-  "must_preserve": [
-    "werm-authoritative-routing",
-    "aura1-supercrew-control-flow",
-    "provider-boundaries",
-    "fallback-order",
-    "bounded-context",
-    "rollback-and-recovery"
-  ],
-  "activate_only_after": "werm-golden-baseline-sealed"
+    "schema":  "werm-openhuman-reference-v1",
+    "status":  "deferred",
+    "authority":  "nvidia-werm",
+    "upstream":  "https://github.com/tinyhumansai/openhuman",
+    "source_commit":  "fed1742a0a9cf3708f492a1352fd684a50fe6a45",
+    "license_observed":  "GPL-3.0",
+    "production_enabled":  false,
+    "integration_branch":  "werm-integration",
+    "candidates":  [
+                       "memory-tree-local-persistent-memory",
+                       "tokenjuice-context-compression",
+                       "mcp-oauth-integration-patterns",
+                       "durable-agent-graphs-subagent-fleets",
+                       "research-recovery-patterns"
+                   ],
+    "must_preserve":  [
+                          "werm-authoritative-routing",
+                          "aura1-supercrew-control-flow",
+                          "provider-boundaries",
+                          "fallback-order",
+                          "bounded-context",
+                          "rollback-and-recovery"
+                      ],
+    "activate_only_after":  "werm-golden-baseline-sealed",
+    "fork":  "https://github.com/Overdrive1080/openhuman"
 }

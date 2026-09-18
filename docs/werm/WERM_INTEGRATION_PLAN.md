@@ -29,3 +29,12 @@ Evaluate selected OpenHuman capabilities only after the WERM golden baseline is 
 
 ## Integration strategy
 Treat OpenHuman as a vendor/reference system. Extract or adapt only capabilities that outperform the existing WERM implementation. Keep WERM as the single source of truth for orchestration, routing, provider policy, validation, fallback, and recovery.
+
+## Source audit
+Verified at upstream commit ed1742a0a9cf3708f492a1352fd684a50fe6a45:
+- Memory Tree is present in README and core memory/harness code.
+- TokenJuice is present in README and core inference/harness code.
+- MCP and OAuth integration code is present.
+- Durable orchestration/sub-agent fleet code and docs are present.
+- SuperContext was not found as a named component at this source pin; do not treat it as an integration target unless a later source revision proves otherwise.
+
